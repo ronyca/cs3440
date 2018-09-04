@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title>Contact Us</title>
+</head>
+
+<body>
+    <h1><b>Contact Us</b></h1>
+    <form method="post" action="http://student.cs.appstate.edu/crr/3440/homework/h3/contact/">
+        <fieldset>
+            <legend>Email Message</legend>
+            <table>
+                <tbody>
+                    <tr>
+                        <td>
+                            <label for="emailTo">To</label>
+                        </td>
+                        <td>
+                            <input readonly="" name="emailTo" id="emailTo" type="text" value="Acme Corporation">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="emailFrom">Your email address</label>
+                        </td>
+                        <td>
+                            <input required="" name="emailFrom" id="emailFrom" type="email" placeholder="Your email address">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="emailBody">Message</label>
+                        </td>
+                        <td>
+                            <textarea required="" name="emailBody" id="emailBody" placeholder="Type your message here"></textarea>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </fieldset>
+        <fieldset>
+            <legend>Stay in Contact</legend>
+            <table>
+                <tbody>
+                    <tr>
+                        <td>
+                            <label for="referrer">How did you hear about us?</label>
+                        </td>
+                        <td>
+                            <select name="referrer" id="referrer">
+                                <option value="google">Google</option>
+                                <option value="ad">Newspaper ad</option>
+                                <option value="friend">Friend</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="newsletter">Newsletter</label>
+                        </td>
+                        <td>
+                            <input name="newsletter" id="newsletter" type="checkbox"> Check if you would like to reveive
+                            email updates.
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </fieldset>
+        <fieldset>
+            <legend>Rating Our Service</legend>
+            <p>How well do you rate the information on this site (where 1 is very poor and 5 is very good)?</p>
+            <table>
+                <tbody>
+                    <tr>
+                        <td>
+                            <input type="radio" value="1" name="rating" id="1">
+                        </td>
+                        <td>
+                            <input type="radio" value="2" name="rating" id="2">
+                        </td>
+                        <td>
+                            <input type="radio" value="3" name="rating" id="3" checked="checked">
+                        </td>
+                        <td>
+                            <input type="radio" value="4" name="rating" id="4">
+                        </td>
+                        <td>
+                            <input type="radio" value="5" name="rating" id="5">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="1">1</label>
+                        </td>
+                        <td>
+                            <label for="2">2</label>
+                        </td>
+                        <td>
+                            <label for="3">3</label>
+                        </td>
+                        <td>
+                            <label for="4">4</label>
+                        </td>
+                        <td>
+                            <label for="5">5</label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="1">Very Poor</label>
+                        </td>
+                        <td>
+                            <label for="2">Poor</label>
+                        </td>
+                        <td>
+                            <label for="3">Average</label>
+                        </td>
+                        <td>
+                            <label for="4">Good</label>
+                        </td>
+                        <td>
+                            <label for="5">Very Good</label>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </fieldset>
+        <button type="submit">Send Message</button>
+        <input type="reset" value="Clear Form">
+    </form>
+</body>
+
+</html>
