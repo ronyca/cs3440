@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Positioning Classwork</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+
+        body {
+            background-color: #ECECEC;
+            font-weight: bold;
+            font-family: Tahoma, Geneva, sans-serif;
+            color: #FFF;
+            text-align: center;
+            line-height: 24px;
+        }
+
+        #wrapper {
+            background-color: #FFF;
+            border-top-width: 1px;
+            border-right-width: 1px;
+            border-bottom-width: 1px;
+            border-left-width: 1px;
+            border-top-style: solid;
+            border-right-style: solid;
+            border-bottom-style: solid;
+            border-left-style: solid;
+            width: 800px;
+            margin-right: auto;
+            margin-left: auto;
+            padding: 20px;
+            position: relative;
+            height: 400px;
+        }
+
+        #red {
+            background-color: #900;
+            height: 10em;
+            width: 20em;
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            z-index: 1;
+        }
+
+        #green {
+            background-color: #090;
+            height: 10em;
+            width: 20em;
+            position: absolute;
+            top: 70px;
+            left: 70px;
+            z-index: 2;
+        }
+
+        #blue {
+            background-color: #00F;
+            height: 10em;
+            width: 20em;
+            position: absolute;
+            top: 120px;
+            left: 120px;
+            z-index: 3;
+        }
+
+        #purple {
+            background-color: #63C;
+            height: 10em;
+            width: 20em;
+            position: absolute;
+            top: 170px;
+            left: 170px;
+            z-index: 4;
+        }
+
+        #footer {
+            background-color: #666;
+            position: absolute;
+            bottom: 20px;
+            right: 20px;
+            left: 20px;
+        }
+
+        h1 {
+            color: #000;
+            font-weight: normal;
+            padding: 50px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Positioning with z-index</h1>
+    <div id="wrapper">
+        <div id="red">Red</div>
+        <div id="green">Green</div>
+        <div id="blue">Blue</div>
+        <div id="purple">Purple</div>
+        <div id="footer">Footer</div>
+    </div>
+</body>
+
+</html>
