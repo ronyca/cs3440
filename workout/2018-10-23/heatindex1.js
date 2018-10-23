@@ -1,0 +1,13 @@
+var heatIndexSpan = document.getElementById('heatindex');
+var T = 96
+var R = 50;
+var c1 = -42.379;
+var c2 = 2.04901523;
+var c3 = 10.14333127;
+var c4 = -0.22475541;
+var c5 = -0.00683783;
+var c6 = -0.05481717;
+var c7 = 0.00122874;
+var c8 = 0.00085282;
+var c9 = -0.00000199;
+heatIndexSpan.textContent = c1 + (c2 * T) + (c3 * R) + (c4 * T * R) + (c5 * T * T) + (c6 * R * R) + (c7 * T * T * R) + (c8  * T * R * R) + (c9 * T * T * R * R) + '°';
