@@ -1,0 +1,68 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Dog Tricks</title>
+  <script src="dog.js"></script>
+</head>
+
+<body>
+  <form id="dogForm">
+    <table>
+      <tbody>
+        <tr>
+          <td><label for="name">Name</label></td>
+          <td><input id="name" type="text" name="name"></td>
+        </tr>
+        <tr>
+          <td><label for="breed">Breed</label></td>
+          <td><input id="breed" type="text" name="breed"></td>
+        </tr>
+        <tr>
+          <td><label>Birthday</label></td>
+          <td><input id="year" type="text" name="year"></td>
+          <td><input id="month" type="text" name="month"></td>
+          <td><input id="day" type="text" name="day"></td>
+        </tr>
+        <tr>
+          <td><label for="tricks">Tricks</label></td>
+          <td>
+            <select id="tricks" name="tricks">
+              <option value="sit">Sit</option>
+              <option value="fetch">Fetch</option>
+              <option value="shake">Shake</option>
+              <option value="down">Down</option>
+            </select>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    <button type="sumbit">Update</button>
+  </form>
+  <h2>My dog...</h2>
+  <table>
+    <tbody>
+      <tr>
+        <td>Name</td>
+        <td id="mydogName"></td>
+      </tr>
+      <tr>
+        <td>Breed</td>
+        <td id="mydogBreed"></td>
+      </tr>
+      <tr>
+        <td>Birthday</td>
+        <td id="mydogBirthday"></td>
+      </tr>
+      <tr>
+        <td>Currently is...</td>
+        <td id="mydogTrick"></td>
+      </tr>
+    </tbody>
+  </table>
+
+  <script src="./mydog.js"></script>
+</body>
+
+</html>
